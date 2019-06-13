@@ -1,7 +1,7 @@
 
 var data;
 
-var txt = '$$Exclamation$$! they said $$Adverb$$ as they jumped into their $$Noun$$ and flew off with their $$Adjective$$ $$PluralNoun$$.';
+var prompt1 = '$$Exclamation$$! they said $$Adverb$$ as they jumped into their $$Noun$$ and flew off with their $$Adjective$$ $$PluralNoun$$.';
 
 function setup() {
   noCanvas();
@@ -23,7 +23,7 @@ function replacer(match, pos) {
 
 function generate() {
   //console.log('generate');
-  var madlib = txt.replace(/\$\$(.*?)\$\$/g, replacer);
+  var madlib = prompt1.replace(/\$\$(.*?)\$\$/g, replacer);
   createP(madlib);
 }
 
